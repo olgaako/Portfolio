@@ -10,28 +10,37 @@
 <body>
     <div class="header">
         <div class="rightheader"> 
-            <button class="link">home</button>
+            <button class="link" data-dropdown-button>home
+                <link rel="home" href="index.html">
+                <!-- not sure if that link worked -->
+            </button>
             <div class="dropdown">
-                 <button class="link"> about</button>
+                 <button class="link" data-dropdown-button> about </button>
                  <div class="dropdown-menu">
-                    dropdown content
+                    <div class="dropdown-links">
+                    <!-- not sure to include div for links mb for css styling -->
+                    <a href="aboutme.html" class="link"> about me </a>
+                    <!-- want to figure out how to put in the link in the dropdown -->
+                    </div>
                  </div>
             </div>
          
-           
-            <button class="link"> portolio</button>
-
-         
-              </div> 
+           <div class="dropdown">
+            <button class="link" data-dropdown-button> portolio</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-links">
+                <a href="https://github.com/olgaako" class="link"> github </a>
+                </div>
+             </div>
+             </div>
+             </div>
     </div>
     <div class="middle">
         <div class="leftmidtext">
-            <h1>Who am I?</h1>
-            <h3> I am blah blah</h3>
+            <a href="aboutme.html" class="link"> <h1>Who am I?</h1> </a>
+            <!-- this link started working all of a sudden literally-->
             <h1>What can I do?</h1>
-            <h3> Blah blah</h3>
-            <h1> What have I created?</h1>
-            <h3> Blah blah</h3>
+            <a href="https://github.com/olgaako" class="link"> <h1> What have I created?</h1> </a>
         </div>
         <div class="rightmidtext">
             <img src="profilepic.png"/>

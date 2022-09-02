@@ -38,3 +38,10 @@
 .link:hover{
     color:black;
 }
+
+.middle{
+    display:flex;
+    padding:30px;
+    justify-content: center;
+    gap:40px;
+}
