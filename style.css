@@ -1,0 +1,40 @@
+.header{
+    margin:100px;
+}
+.rightheader{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    padding:10px;
+    background-color:gray;
+    border-radius:.25rem;
+    box-shadow: 0 2px 5px 0 rgba(255, 230, 230, 0.1);
+    opacity:0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(0px);
+    pointer-events:none;
+}
+
+.dropdown-menu.active{
+    opacity:1;
+    transform: translateY(10px);
+}
+/* below is a selector that will be replaced by JS- only for testing purposes */
+.dropdown>.link:focus+.dropdown-menu{
+    opacity:1;
+    transform: translateY(0);
+    pointer-events:auto;
+}
+
+.dropdown > .link:focus,
+.link:hover{
+    color:black;
+}
