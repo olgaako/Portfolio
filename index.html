@@ -8,29 +8,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     </head>
-<!-- stopped 25 minutes in -->
 <body>
+
+          <nav>
+        <div class="logo"> <h2> Olga Akopiants </h2> </div>
+        <!-- logo isn't necessary, can be deleted -->
+        <div class="openMenu"><i class="fa fa-bars"> </i> </div>
+        <ul class ="mainMenu">
+                        <li> <a href="index.html"> home </a></li>
+                        <li> <a href="aboutme.html">about me</a></li>
+            <li> <a href="https://github.com/olgaako" target="_blank">github</a></li>
+
+            <div class="closeMenu"> <i class="fa fa-times"></i></div>
+        </ul>
+    </nav>  
+
     <section class="showcase">
         <header>
-            <div class="toggle"></div>
         </header>
         <video src="cool.mp4" muted loop autoplay> </video>
         <div class="overlay"></div>
-    <div class="header">
+
+    <!-- <div class="header">
         <div class="rightheader"> 
             <button class="link" data-dropdown-button>home
                 <link rel="home" href="index.html">
-                <!-- not sure if that link worked oye e-->
-            </button>
+               not sure if that link worked oye e-->
+            <!-- </button>
             <div class="dropdown">
                  <button class="link" data-dropdown-button> about </button>
                  <div class="dropdown-menu">
                     <div class="dropdown-links">
-                    <!-- not sure to include div for links mb for css styling -->
-                    <a href="aboutme.html" class="link"> about me </a>
+                  not sure to include div for links mb for css styling -->
+                    <!-- <a href="aboutme.html" class="link"> about me </a> -->
                     <!-- want to figure out how to put in the link in the dropdown -->
-                    </div>
+                    <!-- </div>
                  </div>
             </div>
         
@@ -44,23 +58,23 @@
              </div>
              </div>
              </div>
-    </div>
+    </div> --> 
     <div class="middle">
         <div class="leftmidtext">
             <a href="aboutme.html" class="link"> <h1>WHO AM I?</h1> </a>
-            <!-- this link started working all of a sudden literally-->
-            <h1>What can I do?</h1>
-            <a href="https://github.com/olgaako" class="link"> <h1> What have I made?</h1> </a>
+            <a href="https://github.com/olgaako" target="_blank" class="link"> <h1> What have I made?</h1> </a>
         </div>
-        <div class="rightmidtext">
-            <img src="me.png"/>
+        <!-- <div class="rightmidtext">
+            <img src="me.png"/> -->
             <!-- image -->
-        </div></div>
+        </div></div> 
     </section>
+
+
+
 </body>
 
-
-
+ 
 
 
 </html>

@@ -1,5 +1,20 @@
-document.addEventListener('click', e =>{
-    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+menu_items.forEach(item => {
+    item.addEventListener('click',function(){
+        close();
+    })
 })
 
-// stopped around ten minutes in
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+function close(){
+    mainMenu.style.top = '-100%'}
